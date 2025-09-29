@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flavor Collection - Kwality Walls | Premium Ice Cream Flavors</title>
+    <meta name="description" content="Explore our complete collection of premium ice cream flavors. From rich chocolate to seasonal specialties, discover detailed ingredient stories, nutritional information, and customer reviews." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fkwalitywa2649back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-secondary-200">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="18" fill="#8B4513"/>
+                        <circle cx="20" cy="20" r="12" fill="#FFD700"/>
+                        <path d="M15 18c0-2.5 2.5-4 5-4s5 1.5 5 4-2.5 4-5 4-5-1.5-5-4z" fill="#F5F5DC"/>
+                        <circle cx="17" cy="16" r="1" fill="#8B4513"/>
+                        <circle cx="23" cy="16" r="1" fill="#8B4513"/>
+                        <path d="M16 20c1 1 3 1 4 0 1 1 3 1 4 0" stroke="#8B4513" stroke-width="1" stroke-linecap="round"/>
+                    </svg>
+                    <div>
+                        <h1 class="font-playfair text-xl font-bold text-primary">Kwality Walls</h1>
+                        <p class="font-dancing text-sm text-accent-500">Premium Ice Cream</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors duration-300">Home</a>
+                    <a href="flavor_collection.html" class="text-primary font-inter font-semibold border-b-2 border-accent">Flavors</a>
+                    <a href="about_us.html" class="text-text-secondary hover:text-primary transition-colors duration-300">About Us</a>
+                    <a href="our_stories.html" class="text-text-secondary hover:text-primary transition-colors duration-300">Our Stories</a>
+                    <a href="contact.html" class="text-text-secondary hover:text-primary transition-colors duration-300">Contact</a>
+                </div>
+
+                <!-- Store Locator Button -->
+                <div class="hidden md:block">
+                    <button class="btn-primary flex items-center space-x-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        <span>Find Store</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden mt-4 pb-4 border-t border-secondary-200" id="mobile-menu">
+                <div class="flex flex-col space-y-4 pt-4">
+                    <a href="homepage.html" class="text-text-secondary">Home</a>
+                    <a href="flavor_collection.html" class="text-primary font-semibold">Flavors</a>
+                    <a href="about_us.html" class="text-text-secondary">About Us</a>
+                    <a href="our_stories.html" class="text-text-secondary">Our Stories</a>
+                    <a href="contact.html" class="text-text-secondary">Contact</a>
+                    <button class="btn-primary w-full mt-4">Find Store</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-cream">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h1 class="font-playfair text-hero font-bold text-primary mb-6">
+                    Our <span class="text-accent font-dancing">Flavor Universe</span>
+                </h1>
+                <p class="font-inter text-lg text-text-secondary max-w-3xl mx-auto">
+                    Discover our complete collection of premium ice cream flavors, each crafted with the finest ingredients 
+                    and time-honored techniques. From classic favorites to seasonal specialties, find your perfect indulgence.
+                </p>
+            </div>
+
+            <!-- Search and Filter Bar -->
+            <div class="max-w-4xl mx-auto mb-12">
+                <div class="bg-white rounded-2xl p-6 shadow-medium">
+                    <div class="flex flex-col lg:flex-row gap-4">
+                        <!-- Search Input -->
+                        <div class="flex-1 relative">
+                            <input type="text" placeholder="Search flavors, ingredients..." class="w-full pl-12 pr-4 py-3 bg-surface rounded-lg border border-secondary-300 focus:border-accent focus:outline-none transition-colors duration-300" id="flavor-search" />
+                            <svg class="w-5 h-5 absolute left-4 top-1/2 transform -translate-y-1/2 text-text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                        </div>
+
+                        <!-- Category Filter -->
+                        <select class="px-4 py-3 bg-surface rounded-lg border border-secondary-300 focus:border-accent focus:outline-none transition-colors duration-300" id="category-filter">
+                            <option value>All Categories</option>
+                            <option value="premium">Premium Collection</option>
+                            <option value="seasonal">Seasonal Specials</option>
+                            <option value="classic">Classic Favorites</option>
+                            <option value="cones">Cones & Bars</option>
+                        </select>
+
+                        <!-- Dietary Filter -->
+                        <select class="px-4 py-3 bg-surface rounded-lg border border-secondary-300 focus:border-accent focus:outline-none transition-colors duration-300" id="dietary-filter">
+                            <option value>All Options</option>
+                            <option value="vegetarian">Vegetarian</option>
+                            <option value="no-nuts">Nut-Free</option>
+                            <option value="low-sugar">Reduced Sugar</option>
+                        </select>
+
+                        <!-- Filter Toggle Button -->
+                        <button class="btn-secondary flex items-center space-x-2" id="advanced-filter-btn">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.207A1 1 0 013 6.5V4z"/>
+                            </svg>
+                            <span>Filters</span>
+                        </button>
+
+                        <!-- Reset Button -->
+                        <button class="px-4 py-3 text-text-secondary hover:text-primary transition-colors duration-300" id="reset-filters">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Advanced Filters Panel -->
+                    <div class="hidden mt-6 pt-6 border-t border-secondary-200" id="advanced-filters">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div>
+                                <label class="block font-inter text-sm font-medium text-text-primary mb-2">Price Range</label>
+                                <select class="w-full px-3 py-2 bg-surface rounded-lg border border-secondary-300 focus:border-accent focus:outline-none">
+                                    <option value>Any Price</option>
+                                    <option value="budget">Under ₹100</option>
+                                    <option value="mid">₹100 - ₹200</option>
+                                    <option value="premium">Above ₹200</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block font-inter text-sm font-medium text-text-primary mb-2">Base Type</label>
+                                <select class="w-full px-3 py-2 bg-surface rounded-lg border border-secondary-300 focus:border-accent focus:outline-none">
+                                    <option value>All Types</option>
+                                    <option value="dairy">Dairy</option>
+                                    <option value="sorbet">Sorbet</option>
+                                    <option value="frozen-yogurt">Frozen Yogurt</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block font-inter text-sm font-medium text-text-primary mb-2">Texture</label>
+                                <select class="w-full px-3 py-2 bg-surface rounded-lg border border-secondary-300 focus:border-accent focus:outline-none">
+                                    <option value>All Textures</option>
+                                    <option value="creamy">Creamy</option>
+                                    <option value="chunky">Chunky</option>
+                                    <option value="smooth">Smooth</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flavor Collection Grid -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <!-- Results Header -->
+            <div class="flex items-center justify-between mb-8">
+                <div>
+                    <h2 class="font-playfair text-heading font-semibold text-primary">
+                        <span id="results-count">24</span> Flavors Found
+                    </h2>
+                    <p class="font-inter text-text-secondary">Showing all available flavors</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <span class="font-inter text-sm text-text-secondary">Sort by:</span>
+                    <select class="px-3 py-2 bg-surface rounded-lg border border-secondary-300 focus:border-accent focus:outline-none" id="sort-select">
+                        <option value="popular">Most Popular</option>
+                        <option value="name">Name A-Z</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest First</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Flavor Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="flavor-grid">
+                <!-- Rich Chocolate -->
+                <div class="card group cursor-pointer hover:scale-105 transition-all duration-400 flavor-card" data-category="premium" data-dietary="vegetarian">
+                    <div class="relative overflow-hidden rounded-xl mb-4">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=2089&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Rich Chocolate Ice Cream" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-400" loading="lazy" onerror="this.src='https://images.pexels.com/photos/918327/pexels-photo-918327.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4">
+                            <span class="premium-badge">Premium</span>
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <button class="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors favorite-btn" data-flavor="rich-chocolate">
+                                <svg class="w-4 h-4 text-text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="font-playfair text-xl font-semibold text-primary mb-2">Rich Chocolate</h3>
+                        <p class="font-inter text-text-secondary text-sm mb-3">
+                            Indulgent Belgian chocolate with a velvety smooth texture that melts perfectly on your tongue.
+                        </p>
+                        <div class="flex items-center space-x-2 mb-3">
+                            <div class="flex space-x-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                            <span class="font-inter text-sm text-text-muted">(4.8) 156 reviews</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="font-inter text-lg font-semibold text-accent-600">₹180 per 500ml</span>
+                            <div class="flex items-center space-x-2">
+                                <button class="text-primary hover:text-accent transition-colors nutrition-btn" data-flavor="rich-chocolate" title="Nutrition Info">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </button>
+                                <button class="btn-primary text-sm px-4 py-2">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Expandable Details -->
+                    <div class="hidden border-t border-secondary-200 pt-4 flavor-details" id="details-rich-chocolate">
+                        <div class="space-y-3">
+                            <div>
+                                <h4 class="font-inter font-semibold text-text-primary mb-1">Ingredients</h4>
+                                <p class="font-inter text-sm text-text-secondary">Fresh cream, Belgian chocolate (18%), sugar, milk solids, stabilizers</p>
+                            </div>
+                            <div>
+                                <h4 class="font-inter font-semibold text-text-primary mb-1">Allergens</h4>
+                                <p class="font-inter text-sm text-text-secondary">Contains milk, may contain traces of nuts</p>
+                            </div>
+                            <div>
+                                <h4 class="font-inter font-semibold text-text-primary mb-1">Nutrition (per 100g)</h4>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <span class="text-text-secondary">Calories: 220</span>
+                                    <span class="text-text-secondary">Fat: 12g</span>
+                                    <span class="text-text-secondary">Protein: 4g</span>
+                                    <span class="text-text-secondary">Carbs: 24g</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alphonso Mango -->
+                <div class="card group cursor-pointer hover:scale-105 transition-all duration-400 flavor-card" data-category="seasonal" data-dietary="vegetarian">
+                    <div class="relative overflow-hidden rounded-xl mb-4">
+                        <img src="https://images.unsplash.com/photo-1605027990121-cbae9ff4b5d5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Fresh Mango Ice Cream" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-400" loading="lazy" onerror="this.src='https://images.pixabay.com/photos/2017/06/30/18/30/ice-cream-2456722_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4">
+                            <span class="premium-badge bg-warning-100 text-warning-500 border-warning">Seasonal</span>
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <button class="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors favorite-btn" data-flavor="alphonso-mango">
+                                <svg class="w-4 h-4 text-text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="font-playfair text-xl font-semibold text-primary mb-2">Alphonso Mango</h3>
+                        <p class="font-inter text-text-secondary text-sm mb-3">
+                            Made with the finest Alphonso mangoes, capturing the essence of summer in every scoop.
+                        </p>
+                        <div class="flex items-center space-x-2 mb-3">
+                            <div class="flex space-x-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-secondary-300" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                            <span class="font-inter text-sm text-text-muted">(4.6) 89 reviews</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="font-inter text-lg font-semibold text-accent-600">₹200 per 500ml</span>
+                            <div class="flex items-center space-x-2">
+                                <button class="text-primary hover:text-accent transition-colors nutrition-btn" data-flavor="alphonso-mango" title="Nutrition Info">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </button>
+                                <button class="btn-primary text-sm px-4 py-2">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Classic Cornetto -->
+                <div class="card group cursor-pointer hover:scale-105 transition-all duration-400 flavor-card" data-category="cones" data-dietary="vegetarian">
+                    <div class="relative overflow-hidden rounded-xl mb-4">
+                        <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Cornetto Ice Cream Cone" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-400" loading="lazy" onerror="this.src='https://images.pixabay.com/photos/2018/07/18/18/43/ice-cream-3547550_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4">
+                            <span class="premium-badge bg-success-100 text-success-600 border-success">Popular</span>
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <button class="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors favorite-btn" data-flavor="classic-cornetto">
+                                <svg class="w-4 h-4 text-text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="font-playfair text-xl font-semibold text-primary mb-2">Classic Cornetto</h3>
+                        <p class="font-inter text-text-secondary text-sm mb-3">
+                            Crispy waffle cone filled with creamy vanilla and topped with chocolate and nuts.
+                        </p>
+                        <div class="flex items-center space-x-2 mb-3">
+                            <div class="flex space-x-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                            <span class="font-inter text-sm text-text-muted">(4.9) 234 reviews</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="font-inter text-lg font-semibold text-accent-600">₹45 per piece</span>
+                            <div class="flex items-center space-x-2">
+                                <button class="text-primary hover:text-accent transition-colors nutrition-btn" data-flavor="classic-cornetto" title="Nutrition Info">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </button>
+                                <button class="btn-primary text-sm px-4 py-2">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chocolate Feast -->
+                <div class="card group cursor-pointer hover:scale-105 transition-all duration-400 flavor-card" data-category="premium" data-dietary="vegetarian">
+                    <div class="relative overflow-hidden rounded-xl mb-4">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Chocolate Feast Ice Cream" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-400" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1352278/pexels-photo-1352278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4">
+                            <span class="premium-badge">Limited</span>
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <button class="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors favorite-btn" data-flavor="chocolate-feast">
+                                <svg class="w-4 h-4 text-text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="font-playfair text-xl font-semibold text-primary mb-2">Chocolate Feast</h3>
+                        <p class="font-inter text-text-secondary text-sm mb-3">
+                            Ultimate chocolate experience with chunks, chips, and swirls in rich chocolate base.
+                        </p>
+                        <div class="flex items-center space-x-2 mb-3">
+                            <div class="flex space-x-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-secondary-300" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                            <span class="font-inter text-sm text-text-muted">(4.7) 112 reviews</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="font-inter text-lg font-semibold text-accent-600">₹220 per 500ml</span>
+                            <div class="flex items-center space-x-2">
+                                <button class="text-primary hover:text-accent transition-colors nutrition-btn" data-flavor="chocolate-feast" title="Nutrition Info">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </button>
+                                <button class="btn-primary text-sm px-4 py-2">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vanilla Bean -->
+                <div class="card group cursor-pointer hover:scale-105 transition-all duration-400 flavor-card" data-category="classic" data-dietary="vegetarian">
+                    <div class="relative overflow-hidden rounded-xl mb-4">
+                        <img src="https://images.pexels.com/photos/1362534/pexels-photo-1362534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Vanilla Bean Ice Cream" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-400" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4">
+                            <span class="premium-badge bg-success-100 text-success-600 border-success">Classic</span>
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <button class="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors favorite-btn" data-flavor="vanilla-bean">
+                                <svg class="w-4 h-4 text-text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="font-playfair text-xl font-semibold text-primary mb-2">Vanilla Bean</h3>
+                        <p class="font-inter text-text-secondary text-sm mb-3">
+                            Pure Madagascar vanilla beans create this timeless classic with visible specks of real vanilla.
+                        </p>
+                        <div class="flex items-center space-x-2 mb-3">
+                            <div class="flex space-x-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                            <span class="font-inter text-sm text-text-muted">(4.8) 198 reviews</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="font-inter text-lg font-semibold text-accent-600">₹160 per 500ml</span>
+                            <div class="flex items-center space-x-2">
+                                <button class="text-primary hover:text-accent transition-colors nutrition-btn" data-flavor="vanilla-bean" title="Nutrition Info">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </button>
+                                <button class="btn-primary text-sm px-4 py-2">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strawberry Swirl -->
+                <div class="card group cursor-pointer hover:scale-105 transition-all duration-400 flavor-card" data-category="classic" data-dietary="vegetarian">
+                    <div class="relative overflow-hidden rounded-xl mb-4">
+                        <img src="https://images.pixabay.com/photos/2017/07/31/22/05/ice-cream-2561759_1280.jpg" alt="Strawberry Swirl Ice Cream" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-400" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1488900128323-21503983a07e?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4">
+                            <span class="premium-badge bg-error-100 text-error-400 border-error">Fruity</span>
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <button class="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors favorite-btn" data-flavor="strawberry-swirl">
+                                <svg class="w-4 h-4 text-text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="font-playfair text-xl font-semibold text-primary mb-2">Strawberry Swirl</h3>
+                        <p class="font-inter text-text-secondary text-sm mb-3">
+                            Fresh strawberry pieces swirled into creamy vanilla base for a perfect berry delight.
+                        </p>
+                        <div class="flex items-center space-x-2 mb-3">
+                            <div class="flex space-x-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-secondary-300" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                            <span class="font-inter text-sm text-text-muted">(4.5) 143 reviews</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="font-inter text-lg font-semibold text-accent-600">₹170 per 500ml</span>
+                            <div class="flex items-center space-x-2">
+                                <button class="text-primary hover:text-accent transition-colors nutrition-btn" data-flavor="strawberry-swirl" title="Nutrition Info">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </button>
+                                <button class="btn-primary text-sm px-4 py-2">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cookies & Cream -->
+                <div class="card group cursor-pointer hover:scale-105 transition-all duration-400 flavor-card" data-category="premium" data-dietary="vegetarian">
+                    <div class="relative overflow-hidden rounded-xl mb-4">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Cookies and Cream Ice Cream" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-400" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1352278/pexels-photo-1352278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4">
+                            <span class="premium-badge bg-success-100 text-success-600 border-success">Popular</span>
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <button class="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors favorite-btn" data-flavor="cookies-cream">
+                                <svg class="w-4 h-4 text-text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="font-playfair text-xl font-semibold text-primary mb-2">Cookies & Cream</h3>
+                        <p class="font-inter text-text-secondary text-sm mb-3">
+                            Crushed chocolate cookies mixed into smooth vanilla cream for the perfect texture contrast.
+                        </p>
+                        <div class="flex items-center space-x-2 mb-3">
+                            <div class="flex space-x-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                            <span class="font-inter text-sm text-text-muted">(4.9) 267 reviews</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="font-inter text-lg font-semibold text-accent-600">₹190 per 500ml</span>
+                            <div class="flex items-center space-x-2">
+                                <button class="text-primary hover:text-accent transition-colors nutrition-btn" data-flavor="cookies-cream" title="Nutrition Info">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </button>
+                                <button class="btn-primary text-sm px-4 py-2">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button class="btn-secondary" id="load-more-btn">
+                    Load More Flavors
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="py-16 bg-surface">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-display font-bold text-primary mb-4">
+                    What Our <span class="text-accent font-dancing">Customers Say</span>
+                </h2>
+                <p class="font-inter text-lg text-text-secondary max-w-2xl mx-auto">
+                    Real reviews from ice cream lovers who have experienced our premium flavors.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Customer Priya Sharma" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.pixabay.com/photos/2016/11/21/12/42/beard-1845166_1280.jpg'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-playfair font-semibold text-primary">Priya Sharma</h4>
+                            <div class="flex space-x-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="font-inter text-text-secondary">
+                        "The Rich Chocolate flavor is absolutely divine! You can taste the quality in every spoonful. 
+                        It's become our family's go-to dessert for special occasions."
+                    </p>
+                    <div class="mt-4 text-sm text-text-muted">
+                        <span>Verified Purchase • Rich Chocolate</span>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Customer Rajesh Kumar" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.pixabay.com/photos/2016/11/18/19/07/happy-1836445_1280.jpg'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-playfair font-semibold text-primary">Rajesh Kumar</h4>
+                            <div class="flex space-x-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-secondary-300" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="font-inter text-text-secondary">
+                        "Alphonso Mango is pure nostalgia! Tastes exactly like fresh mangoes from my childhood. 
+                        The seasonal availability makes it even more special."
+                    </p>
+                    <div class="mt-4 text-sm text-text-muted">
+                        <span>Verified Purchase • Alphonso Mango</span>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Customer Anita Patel" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.pixabay.com/photos/2017/11/02/14/27/model-2911363_1280.jpg'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-playfair font-semibold text-primary">Anita Patel</h4>
+                            <div class="flex space-x-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="font-inter text-text-secondary">
+                        "Cookies & Cream is a masterpiece! Perfect balance of creamy vanilla and crunchy cookie pieces. 
+                        My kids absolutely love it, and so do I!"
+                    </p>
+                    <div class="mt-4 text-sm text-text-muted">
+                        <span>Verified Purchase • Cookies & Cream</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Promise Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-display font-bold text-primary mb-4">
+                    Our <span class="text-accent font-dancing">Quality Promise</span>
+                </h2>
+                <p class="font-inter text-lg text-text-secondary max-w-2xl mx-auto">
+                    Every flavor is crafted with premium ingredients and rigorous quality standards to ensure 
+                    the perfect ice cream experience.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Premium Ingredients -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-lg font-semibold text-primary mb-2">Premium Ingredients</h3>
+                    <p class="font-inter text-text-secondary text-sm">
+                        Sourced globally from trusted suppliers for authentic flavors and superior quality.
+                    </p>
+                </div>
+
+                <!-- Quality Testing -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-success-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-lg font-semibold text-primary mb-2">Quality Testing</h3>
+                    <p class="font-inter text-text-secondary text-sm">
+                        Rigorous testing at every stage ensures consistent taste, texture, and safety standards.
+                    </p>
+                </div>
+
+                <!-- Fresh Production -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-lg font-semibold text-primary mb-2">Fresh Production</h3>
+                    <p class="font-inter text-text-secondary text-sm">
+                        Made fresh in small batches to maintain optimal flavor and creamy texture.
+                    </p>
+                </div>
+
+                <!-- Cold Chain -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-secondary-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M9 1v6m6-6v6"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-lg font-semibold text-primary mb-2">Cold Chain</h3>
+                    <p class="font-inter text-text-secondary text-sm">
+                        Maintained at perfect temperatures from production to your freezer for optimal quality.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand Column -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" fill="#FFD700"/>
+                            <circle cx="20" cy="20" r="12" fill="#8B4513"/>
+                            <path d="M15 18c0-2.5 2.5-4 5-4s5 1.5 5 4-2.5 4-5 4-5-1.5-5-4z" fill="#F5F5DC"/>
+                            <circle cx="17" cy="16" r="1" fill="#8B4513"/>
+                            <circle cx="23" cy="16" r="1" fill="#8B4513"/>
+                            <path d="M16 20c1 1 3 1 4 0 1 1 3 1 4 0" stroke="#8B4513" stroke-width="1" stroke-linecap="round"/>
+                        </svg>
+                        <div>
+                            <h3 class="font-playfair text-xl font-bold">Kwality Walls</h3>
+                            <p class="font-dancing text-accent">Premium Ice Cream</p>
+                        </div>
+                    </div>
+                    <p class="font-inter text-white/80 mb-6 max-w-md">
+                        Crafting premium ice cream experiences for generations. Quality ingredients, 
+                        authentic flavors, and moments that matter.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-playfair text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 font-inter">
+                        <li><a href="homepage.html" class="text-white/80 hover:text-accent transition-colors">Home</a></li>
+                        <li><a href="flavor_collection.html" class="text-white/80 hover:text-accent transition-colors">Flavors</a></li>
+                        <li><a href="about_us.html" class="text-white/80 hover:text-accent transition-colors">About Us</a></li>
+                        <li><a href="our_stories.html" class="text-white/80 hover:text-accent transition-colors">Our Stories</a></li>
+                        <li><a href="contact.html" class="text-white/80 hover:text-accent transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-playfair text-lg font-semibold mb-4">Get in Touch</h4>
+                    <ul class="space-y-3 font-inter text-white/80">
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <span>1800-123-WALLS</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <span>hello@kwalitywalls.com</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <svg class="w-4 h-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <span>Mumbai, Maharashtra<br />India</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/20 mt-12 pt-8 text-center font-inter text-white/60">
+                <p>&copy; 2025 Kwality Walls. All Rights Reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactive Features -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Advanced Filters Toggle
+        document.getElementById('advanced-filter-btn').addEventListener('click', function() {
+            const advancedFilters = document.getElementById('advanced-filters');
+            advancedFilters.classList.toggle('hidden');
+        });
+
+        // Search and Filter Functionality
+        const searchInput = document.getElementById('flavor-search');
+        const categoryFilter = document.getElementById('category-filter');
+        const dietaryFilter = document.getElementById('dietary-filter');
+        const sortSelect = document.getElementById('sort-select');
+        const flavorCards = document.querySelectorAll('.flavor-card');
+        const resultsCount = document.getElementById('results-count');
+
+        function filterFlavors() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const selectedCategory = categoryFilter.value;
+            const selectedDietary = dietaryFilter.value;
+            let visibleCount = 0;
+
+            flavorCards.forEach(card => {
+                const flavorName = card.querySelector('h3').textContent.toLowerCase();
+                const flavorDescription = card.querySelector('p').textContent.toLowerCase();
+                const cardCategory = card.dataset.category;
+                const cardDietary = card.dataset.dietary;
+
+                const matchesSearch = flavorName.includes(searchTerm) || flavorDescription.includes(searchTerm);
+                const matchesCategory = !selectedCategory || cardCategory === selectedCategory;
+                const matchesDietary = !selectedDietary || cardDietary === selectedDietary;
+
+                if (matchesSearch && matchesCategory && matchesDietary) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            resultsCount.textContent = visibleCount;
+        }
+
+        // Event listeners for filters
+        searchInput.addEventListener('input', filterFlavors);
+        categoryFilter.addEventListener('change', filterFlavors);
+        dietaryFilter.addEventListener('change', filterFlavors);
+
+        // Reset filters
+        document.getElementById('reset-filters').addEventListener('click', function() {
+            searchInput.value = '';
+            categoryFilter.value = '';
+            dietaryFilter.value = '';
+            sortSelect.value = 'popular';
+            filterFlavors();
+        });
+
+        // Favorite functionality
+        document.querySelectorAll('.favorite-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const icon = this.querySelector('svg');
+                const flavorId = this.dataset.flavor;
+                
+                // Toggle favorite state
+                if (icon.getAttribute('fill') === 'none') {
+                    icon.setAttribute('fill', 'currentColor');
+                    icon.classList.add('text-error-400');
+                    // Save to localStorage
+                    let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+                    if (!favorites.includes(flavorId)) {
+                        favorites.push(flavorId);
+                        localStorage.setItem('favorites', JSON.stringify(favorites));
+                    }
+                } else {
+                    icon.setAttribute('fill', 'none');
+                    icon.classList.remove('text-error-400');
+                    // Remove from localStorage
+                    let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+                    favorites = favorites.filter(id => id !== flavorId);
+                    localStorage.setItem('favorites', JSON.stringify(favorites));
+                }
+            });
+        });
+
+        // Load favorites from localStorage
+        document.addEventListener('DOMContentLoaded', function() {
+            const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+            favorites.forEach(flavorId => {
+                const btn = document.querySelector(`[data-flavor="${flavorId}"]`);
+                if (btn) {
+                    const icon = btn.querySelector('svg');
+                    icon.setAttribute('fill', 'currentColor');
+                    icon.classList.add('text-error-400');
+                }
+            });
+        });
+
+        // Nutrition info toggle
+        document.querySelectorAll('.nutrition-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const flavorId = this.dataset.flavor;
+                const details = document.getElementById(`details-${flavorId}`);
+                if (details) {
+                    details.classList.toggle('hidden');
+                }
+            });
+        });
+
+        // Flavor card click to show details
+        document.querySelectorAll('.flavor-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const flavorName = this.querySelector('h3').textContent;
+                const details = this.querySelector('.flavor-details');
+                if (details) {
+                    details.classList.toggle('hidden');
+                }
+            });
+        });
+
+        // Sort functionality
+        sortSelect.addEventListener('change', function() {
+            const sortBy = this.value;
+            const container = document.getElementById('flavor-grid');
+            const cards = Array.from(flavorCards);
+
+            cards.sort((a, b) => {
+                switch (sortBy) {
+                    case 'name':
+                        return a.querySelector('h3').textContent.localeCompare(b.querySelector('h3').textContent);
+                    case 'price-low':
+                        const priceA = parseInt(a.querySelector('.text-accent-600').textContent.match(/\d+/)[0]);
+                        const priceB = parseInt(b.querySelector('.text-accent-600').textContent.match(/\d+/)[0]);
+                        return priceA - priceB;
+                    case 'price-high':
+                        const priceA2 = parseInt(a.querySelector('.text-accent-600').textContent.match(/\d+/)[0]);
+                        const priceB2 = parseInt(b.querySelector('.text-accent-600').textContent.match(/\d+/)[0]);
+                        return priceB2 - priceA2;
+                    default:
+                        return 0; // Keep original order for 'popular' and 'newest'
+                }
+            });
+
+            // Re-append sorted cards
+            cards.forEach(card => container.appendChild(card));
+        });
+
+        // Load more functionality
+        document.getElementById('load-more-btn').addEventListener('click', function() {
+            // Simulate loading more flavors
+            this.textContent = 'Loading...';
+            setTimeout(() => {
+                this.textContent = 'All Flavors Loaded';
+                this.disabled = true;
+                this.classList.add('opacity-50', 'cursor-not-allowed');
+            }, 1000);
+        });
+
+        // Add to cart functionality
+        document.querySelectorAll('.btn-primary').forEach(btn => {
+            if (btn.textContent.includes('Add to Cart')) {
+                btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const originalText = this.textContent;
+                    this.textContent = 'Added!';
+                    this.classList.add('bg-success-600');
+                    
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                        this.classList.remove('bg-success-600');
+                    }, 1500);
+                });
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Kwality Walls | Customer Support & Business Inquiries</title>
+    <meta name="description" content="Get in touch with Kwality Walls for customer support, feedback, bulk orders, and business inquiries. We're here to help with all your ice cream needs." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fkwalitywa2649back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-secondary-200">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="18" fill="#8B4513"/>
+                        <circle cx="20" cy="20" r="12" fill="#FFD700"/>
+                        <path d="M15 18c0-2.5 2.5-4 5-4s5 1.5 5 4-2.5 4-5 4-5-1.5-5-4z" fill="#F5F5DC"/>
+                        <circle cx="17" cy="16" r="1" fill="#8B4513"/>
+                        <circle cx="23" cy="16" r="1" fill="#8B4513"/>
+                        <path d="M16 20c1 1 3 1 4 0 1 1 3 1 4 0" stroke="#8B4513" stroke-width="1" stroke-linecap="round"/>
+                    </svg>
+                    <div>
+                        <h1 class="font-playfair text-xl font-bold text-primary">Kwality Walls</h1>
+                        <p class="font-dancing text-sm text-accent-500">Premium Ice Cream</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors duration-300">Home</a>
+                    <a href="flavor_collection.html" class="text-text-secondary hover:text-primary transition-colors duration-300">Flavors</a>
+                    <a href="about_us.html" class="text-text-secondary hover:text-primary transition-colors duration-300">About Us</a>
+                    <a href="our_stories.html" class="text-text-secondary hover:text-primary transition-colors duration-300">Our Stories</a>
+                    <a href="contact.html" class="text-primary font-inter font-semibold border-b-2 border-accent">Contact</a>
+                </div>
+
+                <!-- Store Locator Button -->
+                <div class="hidden md:block">
+                    <button class="btn-primary flex items-center space-x-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        <span>Find Store</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden mt-4 pb-4 border-t border-secondary-200" id="mobile-menu">
+                <div class="flex flex-col space-y-4 pt-4">
+                    <a href="homepage.html" class="text-text-secondary">Home</a>
+                    <a href="flavor_collection.html" class="text-text-secondary">Flavors</a>
+                    <a href="about_us.html" class="text-text-secondary">About Us</a>
+                    <a href="our_stories.html" class="text-text-secondary">Our Stories</a>
+                    <a href="contact.html" class="text-primary font-semibold">Contact</a>
+                    <button class="btn-primary w-full mt-4">Find Store</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-premium text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="font-playfair text-hero font-bold mb-6 text-shadow-soft">
+                We're Here to <span class="text-accent font-dancing">Help</span>
+            </h1>
+            <p class="font-inter text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                Have questions about our flavors? Need support? Want to place a bulk order? 
+                Our dedicated team is ready to assist you with all your ice cream needs.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact-form" class="btn-secondary bg-white text-primary hover:bg-secondary-100">
+                    Send Message
+                </a>
+                <a href="#quick-contact" class="btn-secondary bg-white/20 backdrop-blur-sm text-white hover:bg-white/30">
+                    Quick Contact
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Options -->
+    <section id="quick-contact" class="py-20 bg-surface">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-display font-bold text-primary mb-4">
+                    Multiple Ways to <span class="text-accent font-dancing">Connect</span>
+                </h2>
+                <p class="font-inter text-lg text-text-secondary max-w-2xl mx-auto">
+                    Choose the most convenient way to reach us. We're committed to providing 
+                    exceptional customer service across all channels.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <!-- Phone Support -->
+                <div class="card text-center group hover:scale-105 transition-all duration-400">
+                    <div class="w-16 h-16 bg-accent rounded-full mx-auto mb-6 flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
+                        <svg class="w-8 h-8 text-primary group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-xl font-semibold text-primary mb-4">Phone Support</h3>
+                    <p class="font-inter text-text-secondary mb-4">
+                        Speak directly with our customer service team for immediate assistance.
+                    </p>
+                    <div class="space-y-2">
+                        <p class="font-inter font-semibold text-primary">1800-123-WALLS</p>
+                        <p class="font-inter text-sm text-text-secondary">Toll-free across India</p>
+                        <p class="font-inter text-sm text-text-secondary">Mon-Sat: 9:00 AM - 7:00 PM IST</p>
+                    </div>
+                    <button class="btn-primary mt-6 w-full">Call Now</button>
+                </div>
+
+                <!-- Email Support -->
+                <div class="card text-center group hover:scale-105 transition-all duration-400">
+                    <div class="w-16 h-16 bg-accent rounded-full mx-auto mb-6 flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
+                        <svg class="w-8 h-8 text-primary group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-xl font-semibold text-primary mb-4">Email Support</h3>
+                    <p class="font-inter text-text-secondary mb-4">
+                        Send us detailed inquiries and we'll respond within 24 hours.
+                    </p>
+                    <div class="space-y-2">
+                        <p class="font-inter font-semibold text-primary">hello@kwalitywalls.com</p>
+                        <p class="font-inter text-sm text-text-secondary">General inquiries</p>
+                        <p class="font-inter text-sm text-text-secondary">Response within 24 hours</p>
+                    </div>
+                    <button class="btn-primary mt-6 w-full">Send Email</button>
+                </div>
+
+                <!-- Live Chat -->
+                <div class="card text-center group hover:scale-105 transition-all duration-400">
+                    <div class="w-16 h-16 bg-accent rounded-full mx-auto mb-6 flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
+                        <svg class="w-8 h-8 text-primary group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-xl font-semibold text-primary mb-4">Live Chat</h3>
+                    <p class="font-inter text-text-secondary mb-4">
+                        Get instant answers to your questions with our live chat support.
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-center space-x-2">
+                            <div class="w-3 h-3 bg-success rounded-full animate-pulse"></div>
+                            <p class="font-inter text-sm text-success-600">Online Now</p>
+                        </div>
+                        <p class="font-inter text-sm text-text-secondary">Average response: 2 minutes</p>
+                        <p class="font-inter text-sm text-text-secondary">Available 9:00 AM - 9:00 PM IST</p>
+                    </div>
+                    <button class="btn-primary mt-6 w-full">Start Chat</button>
+                </div>
+            </div>
+
+            <!-- Business Hours & Location -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Business Hours -->
+                <div class="card">
+                    <h3 class="font-playfair text-xl font-semibold text-primary mb-6">Business Hours</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center py-2 border-b border-secondary-200">
+                            <span class="font-inter text-text-primary">Monday - Friday</span>
+                            <span class="font-inter font-semibold text-primary">9:00 AM - 7:00 PM</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-secondary-200">
+                            <span class="font-inter text-text-primary">Saturday</span>
+                            <span class="font-inter font-semibold text-primary">9:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-secondary-200">
+                            <span class="font-inter text-text-primary">Sunday</span>
+                            <span class="font-inter font-semibold text-text-secondary">Closed</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2">
+                            <span class="font-inter text-text-primary">Public Holidays</span>
+                            <span class="font-inter font-semibold text-text-secondary">Limited Hours</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 p-4 bg-accent-50 rounded-lg">
+                        <p class="font-inter text-sm text-text-secondary">
+                            <strong>Note:</strong> All times are in Indian Standard Time (IST). 
+                            For urgent matters outside business hours, please use our email support.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Head Office Location -->
+                <div class="card">
+                    <h3 class="font-playfair text-xl font-semibold text-primary mb-6">Head Office</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-accent mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <div>
+                                <p class="font-inter font-semibold text-primary">Kwality Walls Head Office</p>
+                                <p class="font-inter text-text-secondary">
+                                    123 Premium Plaza, Andheri East<br />
+                                    Mumbai, Maharashtra 400069<br />
+                                    India
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <p class="font-inter text-text-primary">+91 22 4567 8900</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <p class="font-inter text-text-primary">corporate@kwalitywalls.com</p>
+                        </div>
+                    </div>
+                    <button class="btn-secondary mt-6 w-full">Get Directions</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="font-playfair text-display font-bold text-primary mb-4">
+                        Send Us a <span class="text-accent font-dancing">Message</span>
+                    </h2>
+                    <p class="font-inter text-lg text-text-secondary max-w-2xl mx-auto">
+                        Whether you have questions about our products, need support, or want to explore 
+                        business opportunities, we'd love to hear from you.
+                    </p>
+                </div>
+
+                <form class="space-y-8" id="contact-form-element">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- First Name -->
+                        <div>
+                            <label for="firstName" class="block font-inter font-medium text-text-primary mb-2">
+                                First Name *
+                            </label>
+                            <input type="text" id="firstName" name="firstName" required class="input-field" placeholder="Enter your first name" />
+                        </div>
+
+                        <!-- Last Name -->
+                        <div>
+                            <label for="lastName" class="block font-inter font-medium text-text-primary mb-2">
+                                Last Name *
+                            </label>
+                            <input type="text" id="lastName" name="lastName" required class="input-field" placeholder="Enter your last name" />
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Email -->
+                        <div>
+                            <label for="email" class="block font-inter font-medium text-text-primary mb-2">
+                                Email Address *
+                            </label>
+                            <input type="email" id="email" name="email" required class="input-field" placeholder="your.email@example.com" />
+                        </div>
+
+                        <!-- Phone -->
+                        <div>
+                            <label for="phone" class="block font-inter font-medium text-text-primary mb-2">
+                                Phone Number
+                            </label>
+                            <input type="tel" id="phone" name="phone" class="input-field" placeholder="+91 98765 43210" />
+                        </div>
+                    </div>
+
+                    <!-- Inquiry Type -->
+                    <div>
+                        <label for="inquiryType" class="block font-inter font-medium text-text-primary mb-2">
+                            Inquiry Type *
+                        </label>
+                        <select id="inquiryType" name="inquiryType" required class="input-field">
+                            <option value>Select inquiry type</option>
+                            <option value="product">Product Information</option>
+                            <option value="support">Customer Support</option>
+                            <option value="bulk">Bulk Orders</option>
+                            <option value="business">Business Partnership</option>
+                            <option value="feedback">Feedback & Suggestions</option>
+                            <option value="media">Media Inquiries</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Subject -->
+                    <div>
+                        <label for="subject" class="block font-inter font-medium text-text-primary mb-2">
+                            Subject *
+                        </label>
+                        <input type="text" id="subject" name="subject" required class="input-field" placeholder="Brief description of your inquiry" />
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label for="message" class="block font-inter font-medium text-text-primary mb-2">
+                            Message *
+                        </label>
+                        <textarea id="message" name="message" required rows="6" class="input-field resize-none" placeholder="Please provide detailed information about your inquiry..."></textarea>
+                    </div>
+
+                    <!-- Bulk Order Details (Hidden by default) -->
+                    <div id="bulk-order-section" class="hidden space-y-4">
+                        <h3 class="font-playfair text-lg font-semibold text-primary">Bulk Order Details</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="quantity" class="block font-inter font-medium text-text-primary mb-2">
+                                    Estimated Quantity
+                                </label>
+                                <input type="number" id="quantity" name="quantity" class="input-field" placeholder="Number of units" />
+                            </div>
+                            <div>
+                                <label for="deliveryDate" class="block font-inter font-medium text-text-primary mb-2">
+                                    Required Delivery Date
+                                </label>
+                                <input type="date" id="deliveryDate" name="deliveryDate" class="input-field" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Privacy Consent -->
+                    <div class="flex items-start space-x-3">
+                        <input type="checkbox" id="privacy" name="privacy" required class="mt-1 w-4 h-4 text-accent bg-surface border-secondary-300 rounded focus:ring-accent focus:ring-2" />
+                        <label for="privacy" class="font-inter text-sm text-text-secondary">
+                            I agree to the <a href="javascript:void(0)" class="text-primary hover:text-accent underline">Privacy Policy</a> 
+                            and consent to Kwality Walls processing my personal data to respond to my inquiry. *
+                        </label>
+                    </div>
+
+                    <!-- Marketing Consent -->
+                    <div class="flex items-start space-x-3">
+                        <input type="checkbox" id="marketing" name="marketing" class="mt-1 w-4 h-4 text-accent bg-surface border-secondary-300 rounded focus:ring-accent focus:ring-2" />
+                        <label for="marketing" class="font-inter text-sm text-text-secondary">
+                            I would like to receive updates about new flavors, promotions, and company news from Kwality Walls.
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary text-lg px-12 py-4">
+                            Send Message
+                        </button>
+                        <p class="font-inter text-sm text-text-secondary mt-4">
+                            We'll respond to your inquiry within 24 hours during business days.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-surface">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-display font-bold text-primary mb-4">
+                    Frequently Asked <span class="text-accent font-dancing">Questions</span>
+                </h2>
+                <p class="font-inter text-lg text-text-secondary max-w-2xl mx-auto">
+                    Find quick answers to common questions about our products, orders, and services.
+                </p>
+            </div>
+
+            <!-- FAQ Search -->
+            <div class="max-w-2xl mx-auto mb-12">
+                <div class="relative">
+                    <input type="text" id="faq-search" placeholder="Search frequently asked questions..." class="w-full px-6 py-4 bg-white rounded-xl border border-secondary-300 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-200 font-inter" />
+                    <svg class="absolute right-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- FAQ Categories -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="faq-category-btn active" data-category="all">All Questions</button>
+                <button class="faq-category-btn" data-category="products">Products</button>
+                <button class="faq-category-btn" data-category="orders">Orders</button>
+                <button class="faq-category-btn" data-category="delivery">Delivery</button>
+                <button class="faq-category-btn" data-category="quality">Quality</button>
+                <button class="faq-category-btn" data-category="business">Business</button>
+            </div>
+
+            <!-- FAQ Items -->
+            <div class="max-w-4xl mx-auto space-y-4" id="faq-container">
+                <!-- Product FAQs -->
+                <div class="faq-item card" data-category="products">
+                    <button class="faq-question w-full text-left flex justify-between items-center p-6">
+                        <span class="font-playfair text-lg font-semibold text-primary">What makes Kwality Walls ice cream premium?</span>
+                        <svg class="faq-icon w-5 h-5 text-accent transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="font-inter text-text-secondary">
+                            Our premium quality comes from using only the finest ingredients sourced globally, 
+                            traditional craftsmanship methods, and rigorous quality control standards. We use 
+                            real vanilla, authentic Alphonso mangoes, Belgian chocolate, and fresh dairy from 
+                            trusted farms to create our distinctive flavors.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item card" data-category="products">
+                    <button class="faq-question w-full text-left flex justify-between items-center p-6">
+                        <span class="font-playfair text-lg font-semibold text-primary">Are your products suitable for vegetarians?</span>
+                        <svg class="faq-icon w-5 h-5 text-accent transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="font-inter text-text-secondary">
+                            Yes, all our ice cream products are 100% vegetarian. We use only vegetarian-friendly 
+                            ingredients and stabilizers. Each product is clearly marked with the green dot symbol 
+                            indicating vegetarian status as per Indian food regulations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Order FAQs -->
+                <div class="faq-item card" data-category="orders">
+                    <button class="faq-question w-full text-left flex justify-between items-center p-6">
+                        <span class="font-playfair text-lg font-semibold text-primary">How can I place a bulk order?</span>
+                        <svg class="faq-icon w-5 h-5 text-accent transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="font-inter text-text-secondary">
+                            For bulk orders (50+ units), please use our contact form above and select "Bulk Orders" 
+                            as the inquiry type. Provide details about quantity, flavors, and delivery requirements. 
+                            Our business team will contact you within 24 hours with pricing and availability.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item card" data-category="orders">
+                    <button class="faq-question w-full text-left flex justify-between items-center p-6">
+                        <span class="font-playfair text-lg font-semibold text-primary">What is the minimum order quantity for events?</span>
+                        <svg class="faq-icon w-5 h-5 text-accent transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="font-inter text-text-secondary">
+                            For special events and parties, we accept orders starting from 25 units. We offer 
+                            special event packaging and can provide dry ice for transportation. Contact our 
+                            events team for customized solutions and pricing.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Delivery FAQs -->
+                <div class="faq-item card" data-category="delivery">
+                    <button class="faq-question w-full text-left flex justify-between items-center p-6">
+                        <span class="font-playfair text-lg font-semibold text-primary">Do you offer home delivery?</span>
+                        <svg class="faq-icon w-5 h-5 text-accent transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="font-inter text-text-secondary">
+                            Currently, our products are available through authorized retailers and online delivery 
+                            partners in major cities. Use our store locator to find the nearest retailer or check 
+                            availability on popular delivery apps like Swiggy, Zomato, and BigBasket.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Quality FAQs -->
+                <div class="faq-item card" data-category="quality">
+                    <button class="faq-question w-full text-left flex justify-between items-center p-6">
+                        <span class="font-playfair text-lg font-semibold text-primary">How do you ensure product quality and freshness?</span>
+                        <svg class="faq-icon w-5 h-5 text-accent transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="font-inter text-text-secondary">
+                            We maintain strict cold chain management from production to retail. Our products are 
+                            manufactured in ISO-certified facilities, undergo rigorous quality testing, and are 
+                            stored at optimal temperatures throughout the supply chain. Each batch is tracked 
+                            for quality assurance.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Business FAQs -->
+                <div class="faq-item card" data-category="business">
+                    <button class="faq-question w-full text-left flex justify-between items-center p-6">
+                        <span class="font-playfair text-lg font-semibold text-primary">How can I become a retailer partner?</span>
+                        <svg class="faq-icon w-5 h-5 text-accent transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6">
+                        <p class="font-inter text-text-secondary">
+                            We're always looking for quality retail partners. Please contact our business 
+                            development team through the form above, selecting "Business Partnership" as your 
+                            inquiry type. Include details about your location, store type, and refrigeration 
+                            capabilities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Still Have Questions -->
+            <div class="text-center mt-16">
+                <div class="card max-w-2xl mx-auto">
+                    <h3 class="font-playfair text-xl font-semibold text-primary mb-4">
+                        Still Have Questions?
+                    </h3>
+                    <p class="font-inter text-text-secondary mb-6">
+                        Can't find what you're looking for? Our customer service team is here to help.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="#contact-form" class="btn-primary">Send Message</a>
+                        <button class="btn-secondary">Start Live Chat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand Column -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" fill="#FFD700"/>
+                            <circle cx="20" cy="20" r="12" fill="#8B4513"/>
+                            <path d="M15 18c0-2.5 2.5-4 5-4s5 1.5 5 4-2.5 4-5 4-5-1.5-5-4z" fill="#F5F5DC"/>
+                            <circle cx="17" cy="16" r="1" fill="#8B4513"/>
+                            <circle cx="23" cy="16" r="1" fill="#8B4513"/>
+                            <path d="M16 20c1 1 3 1 4 0 1 1 3 1 4 0" stroke="#8B4513" stroke-width="1" stroke-linecap="round"/>
+                        </svg>
+                        <div>
+                            <h3 class="font-playfair text-xl font-bold">Kwality Walls</h3>
+                            <p class="font-dancing text-accent">Premium Ice Cream</p>
+                        </div>
+                    </div>
+                    <p class="font-inter text-white/80 mb-6 max-w-md">
+                        Crafting premium ice cream experiences for generations. Quality ingredients, 
+                        authentic flavors, and moments that matter.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-playfair text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 font-inter">
+                        <li><a href="homepage.html" class="text-white/80 hover:text-accent transition-colors">Home</a></li>
+                        <li><a href="flavor_collection.html" class="text-white/80 hover:text-accent transition-colors">Flavors</a></li>
+                        <li><a href="about_us.html" class="text-white/80 hover:text-accent transition-colors">About Us</a></li>
+                        <li><a href="our_stories.html" class="text-white/80 hover:text-accent transition-colors">Our Stories</a></li>
+                        <li><a href="contact.html" class="text-white/80 hover:text-accent transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-playfair text-lg font-semibold mb-4">Get in Touch</h4>
+                    <ul class="space-y-3 font-inter text-white/80">
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <span>1800-123-WALLS</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <span>hello@kwalitywalls.com</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <svg class="w-4 h-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <span>Mumbai, Maharashtra<br />India</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/20 mt-12 pt-8 text-center font-inter text-white/60">
+                <p>&copy; 2025 Kwality Walls. All Rights Reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Contact Form Handling
+        document.getElementById('contact-form-element').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic form validation
+            const firstName = document.getElementById('firstName').value.trim();
+            const lastName = document.getElementById('lastName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const inquiryType = document.getElementById('inquiryType').value;
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+            const privacy = document.getElementById('privacy').checked;
+
+            if (!firstName || !lastName || !email || !inquiryType || !subject || !message || !privacy) {
+                alert('Please fill in all required fields and accept the privacy policy.');
+                return;
+            }
+
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            // Simulate form submission
+            alert('Thank you for your message! We\'ll respond within 24 hours during business days.');
+            this.reset();
+            
+            // Hide bulk order section if it was shown
+            document.getElementById('bulk-order-section').classList.add('hidden');
+        });
+
+        // Show/hide bulk order section based on inquiry type
+        document.getElementById('inquiryType').addEventListener('change', function() {
+            const bulkSection = document.getElementById('bulk-order-section');
+            if (this.value === 'bulk') {
+                bulkSection.classList.remove('hidden');
+            } else {
+                bulkSection.classList.add('hidden');
+            }
+        });
+
+        // FAQ Functionality
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        const faqCategoryBtns = document.querySelectorAll('.faq-category-btn');
+        const faqSearch = document.getElementById('faq-search');
+        const faqContainer = document.getElementById('faq-container');
+
+        // FAQ Toggle
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const icon = this.querySelector('.faq-icon');
+                
+                // Close all other FAQs
+                faqQuestions.forEach(otherQuestion => {
+                    if (otherQuestion !== this) {
+                        const otherAnswer = otherQuestion.nextElementSibling;
+                        const otherIcon = otherQuestion.querySelector('.faq-icon');
+                        otherAnswer.classList.add('hidden');
+                        otherIcon.style.transform = 'rotate(0deg)';
+                    }
+                });
+                
+                // Toggle current FAQ
+                answer.classList.toggle('hidden');
+                icon.style.transform = answer.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+            });
+        });
+
+        // FAQ Category Filter
+        faqCategoryBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const category = this.dataset.category;
+                
+                // Update active button
+                faqCategoryBtns.forEach(otherBtn => otherBtn.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter FAQ items
+                const faqItems = document.querySelectorAll('.faq-item');
+                faqItems.forEach(item => {
+                    if (category === 'all' || item.dataset.category === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // FAQ Search
+        faqSearch.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question span').textContent.toLowerCase();
+                const answer = item.querySelector('.faq-answer p').textContent.toLowerCase();
+                
+                if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Auto-save form data to localStorage
+        const formInputs = document.querySelectorAll('#contact-form-element input, #contact-form-element select, #contact-form-element textarea');
+        formInputs.forEach(input => {
+            // Load saved data
+            const savedValue = localStorage.getItem(`contact-form-${input.name}`);
+            if (savedValue && input.type !== 'checkbox') {
+                input.value = savedValue;
+            } else if (savedValue && input.type === 'checkbox') {
+                input.checked = savedValue === 'true';
+            }
+
+            // Save data on change
+            input.addEventListener('change', function() {
+                if (this.type === 'checkbox') {
+                    localStorage.setItem(`contact-form-${this.name}`, this.checked);
+                } else {
+                    localStorage.setItem(`contact-form-${this.name}`, this.value);
+                }
+            });
+        });
+
+        // Clear saved data on successful submission
+        document.getElementById('contact-form-element').addEventListener('submit', function() {
+            formInputs.forEach(input => {
+                localStorage.removeItem(`contact-form-${input.name}`);
+            });
+        });
+    </script>
+
+    <style>
+        .faq-category-btn {
+            @apply px-4 py-2 rounded-full font-inter text-sm font-medium transition-all duration-300 border border-secondary-300 text-text-secondary hover:border-accent hover:text-accent;
+        }
+        
+        .faq-category-btn.active {
+            @apply bg-accent text-primary border-accent;
+        }
+        
+        .faq-question:hover {
+            @apply text-accent;
+        }
+        
+        .faq-answer {
+            animation: slideDown 0.3s ease-out;
+        }
+        
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                max-height: 0;
+            }
+            to {
+                opacity: 1;
+                max-height: 200px;
+            }
+        }
+    </style>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
